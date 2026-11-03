@@ -1,0 +1,39 @@
+# Gradle and Kotlin build state
+.gradle/
+.kotlin/
+**/build/
+
+# Local Android SDK configuration
+local.properties
+keystore.properties
+.signing/
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+
+# Native CMake/NDK intermediates
+.cxx/
+**/.cxx/
+.externalNativeBuild/
+
+# IDE and operating system files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local install packages are distributed as artifacts, not source files.
+*.apk
+artifacts/
+.publish/
+.release-archive/
+
+# Large local AI weights and normalized audio fixtures
+*.gguf
+*.f32le
+*.bin
+*.onnx
+*.log

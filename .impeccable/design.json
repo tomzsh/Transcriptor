@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T06:28:01.087131+00:00",
+  "title": "Design System: Transcriptor",
+  "extensions": {
+    "platform": "Android Jetpack Compose Material 3. HTML snippets are documentation previews; native source is authoritative.",
+    "breakpoints": [
+      {
+        "name": "navigation-rail",
+        "value": "840dp"
+      }
+    ],
+    "typographyMeta": {
+      "body": {
+        "displayName": "Transcript body",
+        "purpose": "Selectable document paragraphs with Android multilingual fallback."
+      }
+    },
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Quiet green"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Reading paper"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Import action",
+      "kind": "button",
+      "refersTo": "import-action",
+      "description": "Native Compose documentation preview.",
+      "html": "<button class=\"ds-import\">Import audio or video</button>",
+      "css": ".ds-import{min-height:56px;padding:16px;background:#006B58;color:white;border:0;border-radius:14px;font:600 14px/20px sans-serif}.ds-import:hover{background:#005044}.ds-import:focus-visible{outline:3px solid #006B58;outline-offset:3px}"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "",
+      "description": "Native Compose documentation preview.",
+      "html": "<label class=\"ds-search\">Search recordings<input aria-label=\"Search recordings\" /></label>",
+      "css": ".ds-search{display:grid;gap:8px;font:400 15px/23px sans-serif;color:#414943}.ds-search input{padding:16px;border:1px solid #717A73;border-radius:10px;font:400 17px/28px sans-serif;background:#FAFBF9;color:#19221E}.ds-search input:hover{border-color:#006B58}.ds-search input:focus-visible{outline:2px solid #006B58}"
+    },
+    {
+      "name": "Main destinations",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Native Compose documentation preview.",
+      "html": "<nav class=\"ds-nav\"><button aria-current=\"page\">Recordings</button><button>Models</button><button>Settings</button></nav>",
+      "css": ".ds-nav{display:flex;background:#F0F4EF;padding:12px;gap:8px}.ds-nav button{min-height:48px;flex:1;border:0;border-radius:16px;background:transparent;color:#414943;font:600 14px/20px sans-serif}.ds-nav button[aria-current]{background:#D0E8DC;color:#10251D}.ds-nav button:hover{background:#DEE5DE}.ds-nav button:focus-visible{outline:2px solid #006B58}"
+    },
+    {
+      "name": "Settings group",
+      "kind": "custom",
+      "refersTo": "settings-group",
+      "description": "Native Compose documentation preview.",
+      "html": "<section class=\"ds-settings\"><button>App language <span>English</span></button><button>Processing mode <span>Balanced</span></button></section>",
+      "css": ".ds-settings{background:#F0F4EF;border-radius:16px;overflow:hidden}.ds-settings button{display:grid;gap:3px;text-align:left;padding:18px 20px;min-height:48px;background:transparent;border:0;width:100%;color:#19221E;font:500 15px/22px sans-serif}.ds-settings button+button{border-top:1px solid #C1C9C1}.ds-settings span{color:#414943;font:400 15px/23px sans-serif}.ds-settings button:hover{background:#E4E9E3}.ds-settings button:focus-visible{outline:2px solid #006B58;outline-offset:-2px}"
+    },
+    {
+      "name": "Recording row",
+      "kind": "custom",
+      "refersTo": "project-row",
+      "description": "Native Compose documentation preview.",
+      "html": "<button class=\"ds-project\"><strong>Interview recording</strong><span>12:04 \u00b7 Whisper Small</span><span>Completed</span></button>",
+      "css": ".ds-project{display:grid;width:100%;gap:5px;text-align:left;padding:12px 0;background:#FAFBF9;border:0;border-bottom:1px solid #C1C9C1;color:#19221E;font:400 13px/20px sans-serif}.ds-project strong{font:600 17px/24px sans-serif}.ds-project span{color:#414943}.ds-project span:last-child{color:#006B58}.ds-project:hover{background:#F0F4EF}.ds-project:focus-visible{outline:2px solid #006B58}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Document Workspace",
+    "overview": "Transcriptor feels like a well arranged document library. Recordings, models, and settings have distinct destinations; transcript text receives the most generous space. Native Material 3 controls provide predictable interaction, while measured typography and restrained green accents give the app its identity.",
+    "keyCharacteristics": [
+      "Clear reading hierarchy with system text scaling and Arabic fallback.",
+      "Flat lists, generous margins, and grouped settings with explicit labels.",
+      "Persistent system, light, and dark appearance."
+    ],
+    "rules": [
+      {
+        "name": "The Quiet Accent Rule",
+        "body": "Use accent for actions and state; keep long text on neutral surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Text First Rule",
+        "body": "A transcript is a document: preserve continuous selectable paragraphs and apply search highlights within the surrounding text.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do use native Material components and predictable Back behavior.",
+      "Do preserve multilingual, enlarged-text, light, and dark behavior.",
+      "Do keep controls discoverable while giving transcript text room.",
+      "Do use the bundled Lucide vectors with accessible names on standalone actions."
+    ],
+    "donts": [
+      "Don't replace document structure with nested card stacks.",
+      "Don't fabricate progress, model claims, or language specialization for generic models.",
+      "Don't hide failed actions or discard cue timings, speakers, or original text."
+    ]
+  }
+}

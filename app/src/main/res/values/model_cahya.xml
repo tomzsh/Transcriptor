@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="model_description_cahya_medium_id">Whisper Medium yang disetel Cahya untuk bahasa Indonesia. Konversi GGML Q5 komunitas oleh rafdiraf; unduhan sekitar 539 MB. Memerlukan lebih banyak RAM dan waktu proses daripada Small.</string>
+</resources>

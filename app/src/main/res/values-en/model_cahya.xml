@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="model_description_cahya_medium_id">Whisper Medium fine-tuned by Cahya for Indonesian. Community GGML Q5 conversion by rafdiraf; download about 539 MB. Requires more RAM and processing time than Small.</string>
+</resources>
